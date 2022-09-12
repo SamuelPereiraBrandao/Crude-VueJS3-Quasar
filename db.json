@@ -1,5 +1,6 @@
 {
     "posts": [
-      { "id": 1, "title": "Curso Quasar CRUD", "author": "samuel pereira", "content": "Este é um artigo sobre vue 3, Quasar e API REST" }
+      { "id": 1, "title": "Curso Quasar CRUD", "author": "samuel pereira", "content": "Este é um artigo sobre Vue 3, Quasar e API REST" },
+      { "id": 2, "title": "Curso Vue3", "author": "samuel pereira", "content": "Este é um artigo sobre Vue 3" }
     ]
   }
