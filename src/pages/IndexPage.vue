@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, onMounted } from 'vue'
+import { api } from 'boot/axios'
 export default defineComponent({
   name: 'IndexPage',
   setup () {
@@ -21,6 +22,19 @@ export default defineComponent({
       { name: 'author', field: 'author', label: 'Autor', sortable: true, align: 'left' },
       { name: 'actions', field: 'actions', label: 'Ações', align: 'right' }
     ]
+
+    onMounted(() => {
+      getPosts()
+    })
+
+    const getPosts = async () => {
+      try {
+        const { data } = await api.get('posts')
+        posts.value = data
+      } catch (error) {
+        console.log(error)
+      }
+    }
 
     return {
       posts,
