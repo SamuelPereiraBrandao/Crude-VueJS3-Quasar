@@ -11,6 +11,12 @@
       "title": "Item 2",
       "author": "Samuel Pereira Brandão",
       "content": "Este é um artigo sobre Vue 3"
+    },
+    {
+      "id": 3,
+      "title": "Item 3",
+      "author": "Samuel Pereira Brandão",
+      "content": "Este é um artigo sobre Vue 3"
     }
   ]
 }
